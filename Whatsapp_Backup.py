@@ -65,12 +65,12 @@ def sync_folder(phone_folder, local_folder):
 
 ##### MAIN #####
 #  Path to the backup directory
-backup_dir = "insert path to the desired backup folder"
+backup_dir = "insert path to the desired backup folder" #TODO insert the correct path
 if not os.path.exists(backup_dir):
     raise ValueError("Couldn't find the external disk")
 
 # Full path to ADB executable
-adb_path = r"insert path to adb.exe"
+adb_path = r"insert path to adb.exe" #TODO insert the correct path
 if not os.path.isfile(adb_path):
     raise FileNotFoundError(f"ADB executable not found at path: {adb_path}")
 
@@ -94,7 +94,7 @@ else:
 
 # Use the selected device in subsequent ADB commands
 folders_to_backup = ['Backups', 'Databases', 'Media']
-phone_base_path = "path to the Whatsapp folder in your phone"
+phone_base_path = "path to the Whatsapp folder in your phone" #TODO insert the correct path
 
 
 for folder_name in folders_to_backup:
